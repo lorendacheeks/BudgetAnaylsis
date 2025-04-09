@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Budget Analysis</title>
+	<style>
+		body { font-family: Arial, sans-serif; padding: 20px; }
+		input { margin: 5px 0; padding: 5px; }
+	</style>
+</head>
+<body>
+	<h1>Budget Analysis</h1>
+
+	<label for="budget">Monthly Budget:</label><br>
+	<input type="number" id="budget" placeholder="Enter your budget" /><br><br>
+
+	<div id="expenses">
+		<label>Expenses:</label><br>
+		<input type="number" class="expense" placeholder="Expense 1" /><br>
+	</div>
+	<button onclick="addExpense()">Add Another Expense</button><br><br>
+
+	<button onclick="analyzeBudget()">Calculate</button>
+
+	<h2 id="results"></h2>
+
+	<script src="budgetanalysis.js"></script>
+</body>
+</html>
